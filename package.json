@@ -1,0 +1,19 @@
+{
+  "name": "hash-code-2019",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/batovpavel/hash-code-2019.git"
+  },
+  "author": "Pavel Batov, Roman Dovhopoliuk, Alexander Kozyriev, Alex Sitnik",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/batovpavel/hash-code-2019/issues"
+  },
+  "homepage": "https://github.com/batovpavel/hash-code-2019#readme"
+}
