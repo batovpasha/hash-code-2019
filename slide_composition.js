@@ -1,7 +1,5 @@
 'use strict';
 
-function delta(){};
-
 function slide_composition(slides_array){
   let result = [].push(slides_array.pop());
 
@@ -25,3 +23,5 @@ function slide_composition(slides_array){
     slides_array.splice(best_index, 1);
   }
 }
+
+module.exports = slide_composition;
