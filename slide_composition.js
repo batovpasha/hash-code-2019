@@ -22,6 +22,8 @@ function slide_composition(slides_array){
     result.push(best_slide);
     slides_array.splice(best_index, 1);
   }
+
+  return result;
 }
 
 module.exports = slide_composition;
