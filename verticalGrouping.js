@@ -14,7 +14,8 @@ const verticalGrouping = (arrayOfImages) => {
     };
     for (let j = i + 1; j < arrayOfImages.length; j++) {
       const tagsUnion = _.union(arrayOfImages[i].tags, arrayOfImages[j].tags);
-      if (tagsUnion.length > imageWithMaxTagsLength.tags.length && 
+      if (tagsUnion.length > imageWithMaxTagsLength.tags.length &&
+          !arrayOfImages[i].visited &&
           !arrayOfImages[j].visited) {
         imageWithMaxTagsLength.tags = tagsUnion;
         imageWithMaxTagsLength.index = `${arrayOfImages[i].index} ${arrayOfImages[j].index}`;
@@ -33,7 +34,7 @@ module.exports = {
 
 // console.log(verticalGrouping([{
 //   index: 10,
-//   tags: ['dsd']    
+//   tags: ['dsd']
 // },
 // {
 //   index: 12,
