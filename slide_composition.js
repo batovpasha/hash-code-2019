@@ -6,7 +6,7 @@ function slide_composition(slides_array){
   while(slides_array.length != 0){
     let best_index = 0;
     let best_slide = delta(result[result.length - 1], slides_array[0]);
-
+    
     for (let i = 0; i < slides_array.length; i++){
       let curr_slide = delta(result[result.length - 1], slides_array[i]);
 
